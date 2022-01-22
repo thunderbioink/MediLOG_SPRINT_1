@@ -92,7 +92,7 @@ while choice != "5":
         cursor.execute("DELETE FROM patients WHERE name = ?", values)
         connection.commit()
     print()
-    # Continue improving project...
+    # Continue improving project.
 
 # Close the database connection before exiting
 connection.close()
