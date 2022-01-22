@@ -1,7 +1,10 @@
 """
 CSE310 SQL MediLOG Program
 
-This database will store patient names, birthdays, disability/illness, and folder date/time creation.
+This database will store patient names, birthdays, disability/illness, and a folder date/time creation.
+The purpose is to create a medical database using SQL and Python.
+The public intended are people that need to log their medical information from home & send it to a
+a health professional. 
 """
 
 import sqlite3
@@ -38,7 +41,7 @@ while choice != "5":
     print()
     if choice == "1":
         # Display patients
-        cursor.execute("SELECT * FROM patients ORDER BY name ASC ")
+        cursor.execute("SELECT * FROM patients ORDER BY creation ASC ")
         print("{:>20}  {:>10}  {:>40}  {:>40}".format("Name/Middle/Last", "Birthday", "Disability/Illness", "Folder Date Creation"))
 
         for record in cursor.fetchall():
@@ -57,7 +60,7 @@ while choice != "5":
         except ValueError:
             print("Invalid data!")
     elif choice == "3":
-        # Update existent folder
+        # Update existent patient folder
         try:
             name = get_name(cursor)
         
@@ -70,13 +73,12 @@ while choice != "5":
             values = (dis_ill, birthday, name, ) # Make sure order is correct
             cursor.execute("UPDATE patients SET illness = ?, birthday = ? WHERE name = ?", values)
             connection.commit()
-             # Display updated patient folder
+            # Display updated patient folder
             # cursor.execute("SELECT * FROM patients ORDER BY creation DESC ")
             # print("{:>20}  {:>10}  {:>40}  {:>40}".format("Name/Middle/Last", "Birthday", "Disability/Illness", "Folder Date Creation"))
 
             # for record in cursor.fetchall():
             #     print("{:>20}  {:>10}  {:>40}  {:>40}".format(record[0], record[1], record[2], record[3]))
-            
             
             if cursor.rowcount == 0:
                 print("Invalid Name!")
