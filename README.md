@@ -107,7 +107,6 @@ The programming languages I used were SQL and Python. To integrate both of these
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 * **1st priority:** Create the patient database so individuals with medically complex family members can upload medication, dosage, & date and time to their existing patient folder.
 
 In this priority I intend to make the program more user-friendly to access and edit both databases.
