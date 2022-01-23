@@ -41,7 +41,7 @@ The idea was originally inspired by individuals that need to constantly update t
 
 MediLOG's current functionality is the first step into aiding, both, individuals with medically complex family members and professional health providers, enhance their patient record updating experience.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.loom.com/share/3670730299024978bb83f991ed789988)
 
 # Relational Database
 
@@ -54,6 +54,10 @@ This relational database holds four sets of data:
 
 * **Database Column Names:**
 ![Database Column Names](/program_images/COLUMNS.png)
+* **Clean & Organized Database:**
+![Database Cleaned](/program_images/TABLE_COMPLETE.png)
+* **How to update a patient's folder:**
+![Database Input Format](/program_images/3_UPDATE_FOLDER.png)
 
 * **Database Organization:**
     * Information is displayed by name, in an ascending order.
@@ -95,6 +99,13 @@ The programming languages I used were SQL and Python. To integrate both of these
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
-* **1st priority:** Create the patient database so individuals with medically complex family members can upload medication, dosage, & date and time to their existing patient folder. 
+* **1st priority:** Create the patient database so individuals with medically complex family members can upload medication, dosage, & date and time to their existing patient folder.
+
+In this priority I intend to make the program more user-friendly to access and edit both databases.
+
 * **2nd priority:** Have, both, MediLOG Health Professional and MediLOG Patient database speak to eachother so the users can have an automatic record update.
+
+In this priority I'll have to connect both databases to a cloud database.
 * **3rd priority:** Create a user-friendly platform that can be accessed as a smartphone App & as a Web App.
+
+This priority will take longer, as I'll have to improve simple things in the program skeleton prior to publishing a fully working Web/Mobile App.
