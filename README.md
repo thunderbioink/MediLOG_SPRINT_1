@@ -60,10 +60,6 @@ This relational database holds four sets of data:
 
 ![Database Cleaned](/program_images/TABLE_COMPLETE.png)
 
-* **How to update a patient's folder:**
-
-![Database Input Format](/program_images/3_UPDATE_FOLDER.png)
-
 * **Database Organization:**
     * Information is displayed by name, in an ascending order.
 
