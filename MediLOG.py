@@ -47,7 +47,7 @@ while choice != "5":
     print()
     if choice == "1":
         # Display patients
-        cursor.execute("SELECT * FROM patients ORDER BY name ASC ")
+        cursor.execute("SELECT * FROM patients ORDER BY creation ASC ")
         print("{:>20}  {:>10}  {:>40}  {:>40}".format("Name/Middle/Last", "Birthday", "Disability/Illness", "Folder Date Creation"))
 
         for record in cursor.fetchall():
