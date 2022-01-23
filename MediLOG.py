@@ -1,10 +1,16 @@
 """
 CSE310 SQL MediLOG Program
+PART 1
 
 This database will store patient names, birthdays, disability/illness, and a folder date/time creation.
-The purpose is to create a medical database using SQL and Python.
-The public intended are people that need to log their medical information from home & send it to a
-a health professional. 
+Purpose: To create a medical database using SQL and Python.
+Audience: Healthcare professionals that need to updat/input patient folders data such as:
+
+- Birthdates, illness/Dissabilities (updatable).
+- Names, Patient Folder Record Creation (unique - needs to be deleted and put in again if any changes are
+needed for that specific patient record. See README for more info).
+
+
 """
 
 import sqlite3
@@ -41,7 +47,7 @@ while choice != "5":
     print()
     if choice == "1":
         # Display patients
-        cursor.execute("SELECT * FROM patients ORDER BY creation ASC ")
+        cursor.execute("SELECT * FROM patients ORDER BY name ASC ")
         print("{:>20}  {:>10}  {:>40}  {:>40}".format("Name/Middle/Last", "Birthday", "Disability/Illness", "Folder Date Creation"))
 
         for record in cursor.fetchall():
@@ -70,7 +76,7 @@ while choice != "5":
             name = input("Name: ")
             birthday = input("Birth Date (i.e. YYYY-MM-DD ): ")
             dis_ill = input("Disability/Illness (i.e. No Abbreviations): ")
-            values = (dis_ill, birthday, name, ) # Make sure order is correct
+            values = (dis_ill, birthday, name ) # Make sure order is correct
             cursor.execute("UPDATE patients SET illness = ?, birthday = ? WHERE name = ?", values)
             connection.commit()
             # Display updated patient folder
