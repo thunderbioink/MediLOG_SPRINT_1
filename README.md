@@ -53,21 +53,29 @@ This relational database holds four sets of data:
 4. Patient Folder Creation Date & Time
 
 * **Database Column Names:**
+
 ![Database Column Names](/program_images/COLUMNS.png)
+
 * **Clean & Organized Database:**
+
 ![Database Cleaned](/program_images/TABLE_COMPLETE.png)
+
 * **How to update a patient's folder:**
+
 ![Database Input Format](/program_images/3_UPDATE_FOLDER.png)
 
 * **Database Organization:**
     * Information is displayed by name, in an ascending order.
+
 ![Database Column Names](/program_images/ASC_ORDER_BY_NAME.png)
 
 
 * **There is a format that the user needs to follow when prompted to input patient information:**
+
 ![Database Input Format](/program_images/2_CREATE_FOLDER.png)
 
 * **How to update a patient's folder:**
+
 ![Database Input Format](/program_images/3_UPDATE_FOLDER.png)
     * Input **Name ID:**
     * Type in patient name to match records
