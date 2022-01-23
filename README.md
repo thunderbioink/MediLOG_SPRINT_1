@@ -77,11 +77,12 @@ This relational database holds four sets of data:
 * **How to update a patient's folder:**
 
 ![Database Input Format](/program_images/3_UPDATE_FOLDER.png)
-    * Input **Name ID:**
-    * Type in patient name to match records
-    * Type in *correct* birth date
-    * Type in *correct* illness/disability
-        * *The naming schemes match the naming scheme when selecting option **2**.*
+
+* Input **Name ID:**
+* Type in patient name to match records
+* Type in *correct* birth date
+* Type in *correct* illness/disability
+    * *The naming schemes match the naming scheme when selecting option **2**.*
 
 # Development Environment
 
