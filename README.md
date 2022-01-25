@@ -41,7 +41,7 @@ The idea was originally inspired by individuals that need to constantly update t
 
 MediLOG's current functionality is the first step into aiding, both, individuals with medically complex family members and professional health providers, enhance their patient record updating experience.
 
-[Software Demo Video](https://youtu.be/E8qS5A2Uhx0)
+[Software Demo Video](https://youtu.be/yyNPNKwdfNA)
 
 # Relational Database
 
